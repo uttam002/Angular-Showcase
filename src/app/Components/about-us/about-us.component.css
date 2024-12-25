@@ -1,0 +1,58 @@
+/* About Us Section */
+.about-us-section {
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+}
+
+.about-card {
+  border-radius: 12px;
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-card h4 {
+  color: #007bff;
+}
+
+.about-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Feedback Form Section */
+.feedback-section {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-section input,
+.feedback-section textarea {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.feedback-section input:focus,
+.feedback-section textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.feedback-section button {
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-section button:hover {
+  background-color: #0056b3;
+  color: #fff;
+}

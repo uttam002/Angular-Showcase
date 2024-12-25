@@ -1,0 +1,67 @@
+<div class="about-us-section">
+  <div class="container mt-5">
+    <!-- About Us Section -->
+    <h2 class="text-center display-4 text-primary mb-5">About Us</h2>
+    <p class="text-center text-muted mb-4">
+      Welcome to Angular Workspace! Here, I showcase a collection of projects built during my learning journey.
+      A goal is to explore, experiment, and grow while sharing my work with the community.
+    </p>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="about-card shadow p-4 mb-5">
+          <h4 class="text-center mb-4">Who We Are As Developers</h4>
+          <p class="text-muted text-center">
+            "We are passionate developers constantly learning and creating new things."
+            <br/>
+            This workspace is a reflection of my dedication to building and exploring creative Angular projects.
+            <br/>Stay tuned for more!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feedback Form Section -->
+    <div class="feedback-section mt-5">
+      <h3 class="text-center text-primary mb-4">I Value Your Feedback</h3>
+      <form (ngSubmit)="submitFeedback()" #feedbackForm="ngForm">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Your Name"
+              name="name"
+              [(ngModel)]="feedback.name"
+              required
+            />
+          </div>
+          <div class="col-md-6 mb-3">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Your Email"
+              name="email"
+              [(ngModel)]="feedback.email"
+              required
+            />
+          </div>
+        </div>
+        <div class="mb-3">
+          <textarea
+            class="form-control"
+            rows="5"
+            placeholder="Your Feedback/Message"
+            name="message"
+            [(ngModel)]="feedback.message"
+            required
+          ></textarea>
+        </div>
+        <div class="text-center">
+          <button class="btn btn-primary px-4 py-2" type="submit" [disabled]="!feedbackForm.valid">
+            Submit Feedback
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

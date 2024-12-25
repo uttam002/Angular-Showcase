@@ -1,0 +1,70 @@
+/* Navbar Styles */
+.navbar {
+  position: fixed; /* Fixes the navbar at the top */
+  top: 0; /* Ensures it's aligned at the top */
+  left: 0; /* Ensures it's aligned with the left edge */
+  width: 100%; /* Ensures the navbar spans the full width */
+  background-color: #1e1e2f; /* Dark background color for navbar */
+  padding: 1rem 2rem;
+  z-index: 1000; /* Makes sure the navbar stays on top of other content */
+}
+
+.navbar-brand {
+  color: #f05454;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #f05454;
+}
+
+.navbar-light .navbar-nav .btn-explore {
+  background-color: #f05454;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(78, 141, 247, 0.5);
+}
+
+.navbar-light .navbar-nav .btn-explore:hover {
+  background-color: #fff;
+  color: #f05454;
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(78, 141, 247, 0.7);
+}
+
+/* Adding padding to body to prevent content from being hidden behind navbar */
+body {
+  padding-top: 4rem; /* Adjust this based on the height of your navbar */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .navbar-light .navbar-nav .btn-explore {
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 0.8rem;
+  }
+
+  .navbar-light .navbar-nav .btn-explore {
+    padding: 0.4rem 1.2rem;
+  }
+}

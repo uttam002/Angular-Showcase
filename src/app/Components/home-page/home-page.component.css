@@ -1,0 +1,96 @@
+/* Home Section Styles */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #c72323, #ff9966); /* Gradient background */
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+.section {
+  padding: 100px 20px;
+  height: 100vh;  /* Full viewport height for each section */
+  text-align: center;
+  background-color: #000000;
+}
+.content p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #f7f7f7;
+}
+
+.content h1 {
+  font-size: 3rem;
+  line-height: 1.5;
+  color: #fff;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.content p:last-child {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: #e6e6e6;
+  font-weight: lighter;
+}
+
+/* Explore Button Styles (consistent across navbar and home page) */
+.btn-explore {
+  margin-top: 2rem;
+  padding: 0.8rem 2.5rem;
+  background: linear-gradient(90deg, #4e8df7, #42f5e9); /* Gradient background */
+  color: white !important;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(78, 141, 247, 0.5);
+}
+
+.btn-explore:hover {
+  background: linear-gradient(90deg, #42f5e9, #4e8df7); /* Reverse gradient on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(78, 141, 247, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 2.2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .btn-explore {
+    padding: 0.6rem 2rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .home {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .content h1 {
+    font-size: 1.8rem;
+  }
+
+  .content p {
+    font-size: 0.9rem;
+  }
+
+  .btn-explore {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+  }
+}

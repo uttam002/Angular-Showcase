@@ -1,0 +1,23 @@
+<div class="container mt-5">
+  <h2 class="text-center mb-4 display-4 text-primary">Projects</h2>
+  <div class="row">
+    <div class="col-lg-4   col-md-6 mb-4" *ngFor="let project of projects">
+      <div class="card project-card h-120 shadow-lg">
+        <div class="card-img-wrapper">
+          <img [src]="project.photo" class="card-img-top" alt="{{ project.name }}">
+          <span class="badge bg-primary day-badge">Day {{ project.day }}</span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center text-uppercase">{{ project.name }}</h5>
+          <p class="card-text text-center text-muted">
+            Explore this project to see amazing features and challenges.
+          </p>
+          <div class="d-flex justify-content-around mt-3">
+            <a [href]="project.liveDemo" target="_blank" class="btn btn-outline-success px-4">Live Demo</a>
+            <a [href]="project.sourceCode" target="_blank" class="btn btn-outline-info px-4">Source Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
