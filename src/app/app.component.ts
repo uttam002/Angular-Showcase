@@ -7,7 +7,7 @@ import { AboutUsComponent } from './Components/about-us/about-us.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,HomePageComponent,NavbarComponent,ProjectsComponent,AboutUsComponent],
+  imports: [HomePageComponent,NavbarComponent,ProjectsComponent,AboutUsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
